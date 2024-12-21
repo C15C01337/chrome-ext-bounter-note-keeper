@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bounter Note Keeper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-width: 300px;
+      margin: 0;
+      padding: 0.5rem;
+    }
+    h1 {
+      margin: 0 0 1rem 0;
+    }
+    #noteTitle, #noteContent {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    #saveNote {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      width: 100%;
+    }
+    .note {
+      background: #f7f7f7;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    .note h3 {
+      margin: 0 0 0.25rem 0;
+    }
+    .note pre {
+      background: #fff;
+      padding: 0.5rem;
+      white-space: pre-wrap; /* to allow multi-line code blocks */
+      margin: 0 0 0.25rem 0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .deleteNote {
+      background-color: #dc3545;
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .deleteNote:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <h1>BugBounty Note Keeper</h1>
+  
+  <!-- Note Input Section -->
+  <input type="text" id="noteTitle" placeholder="Title (e.g. Subdomain Discovery)" />
+  <textarea id="noteContent" placeholder="Write your note or code snippet..."></textarea>
+  <button id="saveNote">Save Note</button>
+
+  <!-- Saved Notes Section -->
+  <div id="notesList"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "name": "BugBounty Note Keeper",
+  "version": "1.0",
+  "description": "Save notes, code snippets, and other info for your bug bounty research.",
+  "manifest_version": 3,
+  
+  /* The 'action' key defines the extension’s toolbar button and popup */
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+
+  /* Use chrome.storage to store and retrieve notes */
+  "permissions": ["storage"]
+}
+
